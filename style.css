@@ -1,4 +1,18 @@
+@charset "UTF-8";
+@font-face {
+  font-display: swap;
+  font-family: 'din-next-rounded';
+  font-weight: 500;
+  src: url(recursos/fuentes/DINNextRoundedLTPro-Regular.woff2) format("woff2"),url(recursos/fuentes/fonts/DINNextRoundedLTPro-Regular.woff) format("woff"); }
+@font-face {
+  font-display: swap;
+  font-family: 'din-next-rounded';
+  font-weight: 700;
+  src: url(recursos/fuentes/DINNextRoundedLTPro-Bold.woff2) format("woff2"),url(recursos/fuentes/fonts/DINNextRoundedLTPro-Bold.woff) format("woff"); }
+
+
 *{
+    font-family: 'din-next-rounded', sans-serif;
     box-sizing:border-box
 }
 :after,:before{
@@ -209,13 +223,13 @@ img{
     display:none
 }
 .font-base{
-    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'
+    font-family: 'din-next-rounded', sans-serif
 }
 .font-sans-serif{
-    font-family:Mosk,sans-serif
+    font-family: 'din-next-rounded', sans-serif
 }
 .font-cursive{
-    font-family:Jenthill,sans-serif
+    font-family: 'din-next-rounded', sans-serif
 }
 .gap-top-300{
     margin-top:.8rem
@@ -539,34 +553,14 @@ img{
     --color-dark-down:#303145;
     --color-dark-no-swop:#404040
 }
-@font-face{
-    font-family:Mosk;
-    font-style:normal;
-    font-weight:600;
-    font-display:swap;
-    src:url(/fonts/mosk-600.woff2) format("woff2"),url(/fonts/mosk-600.woff) format("woff")
-}
-@font-face{
-    font-family:Mosk;
-    font-style:normal;
-    font-weight:900;
-    font-display:swap;
-    src:url(/fonts/mosk-900.woff2) format("woff2"),url(/fonts/mosk-900.woff) format("woff")
-}
-@font-face{
-    font-family:Jenthill;
-    font-style:normal;
-    font-weight:400;
-    font-display:swap;
-    src:url(/fonts/jenthill.woff2) format("woff2"),url(/fonts/jenthill.woff) format("woff")
-}
+
 body{
     line-height:1.75;
-    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    font-family:'din-next-rounded', sans-serif;
     font-size:var(--step-0)
 }
 h1,h2,h3{
-    font-family:Mosk,sans-serif;
+    font-family:'din-next-rounded', sans-serif;
     letter-spacing:.04em
 }
 .headline{
@@ -680,6 +674,7 @@ h1,h2,h3{
     --color-lilac:hsl(263, 29%, 32%);
     --color-peach:hsl(316, 30%, 36%);
     --color-sherbet:hsl(257, 8%, 18%);
+    --color-sea: hsl(257, 8%, 18%);
     --color-sherbet-fade:hsl(260, 24%, 18%);
     --color-marshmellow:hsl(314, 22%, 42%);
     --color-light:hsl(274, 4%, 15%);
@@ -899,7 +894,7 @@ a.arrow{
     position:relative;
     padding-right:1.25rem;
     text-decoration:none;
-    font-family:Mosk,sans-serif;
+    font-family:'din-next-rounded', sans-serif;
     letter-spacing:.05rem
 }
 a.arrow::after{
@@ -927,7 +922,7 @@ a.arrow:hover::after{
     padding:.5rem 1.25rem;
     background-color:var(--color-dark);
     color:var(--color-dark);
-    font-family:Mosk,sans-serif;
+    font-family:'din-next-rounded', sans-serif;
     font-weight:600;
     text-decoration:none;
     letter-spacing:.02em
@@ -1515,7 +1510,7 @@ article input[type=range]{
     margin-top:2rem
 }
 .post__body pre[class*=language-]:after{
-    font-family:Mosk,sans-serif;
+    font-family:'din-next-rounded', sans-serif;
     font-size:var(--step--1);
     position:absolute;
     content:"";
@@ -1873,7 +1868,7 @@ article input[type=range]{
     }
 }
 code[class*=language-],pre[class*=language-]{
-    font-family:Consolas,Menlo,Monaco,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L","Courier New",Courier,monospace;
+    font-family:'din-next-rounded', sans-serif;
     line-height:1.375;
     direction:ltr;
     text-align:left;
@@ -2031,7 +2026,7 @@ pre>code.highlight{
     align-items:center;
     align-content:center;
     justify-content:center;
-    font-family:Mosk,sans-serif;
+    font-family:'din-next-rounded', sans-serif;
     font-size:.8rem;
     font-weight:600;
     padding-bottom:env(safe-area-inset-bottom)
@@ -2463,7 +2458,7 @@ pre>code.highlight{
     color:var(--color-dark);
     z-index:1;
     text-decoration:none;
-    font-family:Mosk,sans-serif;
+    font-family:'din-next-rounded', sans-serif;
     font-weight:600;
     border-bottom:1.5px solid transparent;
     transition:border-color .1s ease-out
@@ -2500,7 +2495,7 @@ pre>code.highlight{
     filter:invert(1) brightness(1.3)
 }
 .Speaking{
-    background-color:var(--color-sherbet);
+    background-color:var(--color-sea);
     min-height:100vh;
     --color-selection-bg:var(--color-dark-selection);
     --color-selection:var(--color-peach)
@@ -2536,7 +2531,7 @@ pre>code.highlight{
     background-color:var(--color-light);
     color:var(--color-dark);
     border:solid 2px var(--color-dark);
-    font-family:Mosk,sans-serif;
+    font-family:'din-next-rounded', sans-serif;
     -webkit-box-shadow:.3rem .3rem 0 0 var(--color-dark);
     -moz-box-shadow:.3rem .3rem 0 0 var(--color-dark);
     box-shadow:.3rem .3rem 0 0 var(--color-dark)
@@ -2629,7 +2624,7 @@ pre>code.highlight{
     color:var(--color-dark);
     z-index:1;
     text-decoration:none;
-    font-family:Mosk,sans-serif;
+    font-family:'din-next-rounded', sans-serif;
     font-weight:600;
     border-bottom:1.5px solid var(--color-mint)
 }
