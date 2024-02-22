@@ -615,12 +615,23 @@ h1,h2,h3{
 
 .Titulo {
     font-family:'Mosk', sans-serif;
-    font-size: 55px;
+    font-size: 40px;
 }
+
+@media screen and (min-width:800px){
+    .Titulo {
+    font-family:'Mosk', sans-serif;
+    font-size: 55px;
+}}
 
 .Secciones {
     font-family:'Mosk', sans-serif;
-    font-size: 48px;
+    font-size: 44px;
+}
+
+.btn_box {
+    display: flex;
+    justify-content: center;
 }
 
 .small,small{
@@ -2019,7 +2030,6 @@ pre>code.highlight{
     font-weight:700
 }
 .Site-head{
-    position:absolute;
     top:0;
     left:0;
     right:0;
