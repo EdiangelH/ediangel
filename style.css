@@ -10,6 +10,20 @@
   font-weight: 700;
   src: url(recursos/fuentes/DINNextRoundedLTPro-Bold.woff2) format("woff2"),url(recursos/fuentes/fonts/DINNextRoundedLTPro-Bold.woff) format("woff"); }
 
+  @font-face {
+    font-display: swap;
+    font-family: 'Mosk';
+    font-weight: 600;
+    src: url(recursos/fuentes/mosk-600.woff2) format("woff2"),url(recursos/fuentes/fonts/mosk-600.woff) format("woff"); }
+
+    @font-face {
+        font-display: swap;
+        font-family: 'Mosk';
+        font-weight: 900;
+        src: url(recursos/fuentes/mosk-900.woff2) format("woff2"),url(recursos/fuentes/fonts/mosk-900.woff) format("woff"); }
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 *{
     font-family: 'din-next-rounded', sans-serif;
@@ -565,16 +579,16 @@ body{
     font-size:var(--step-0)
 }
 h1,h2,h3{
-    font-family:'din-next-rounded', sans-serif;
-    letter-spacing:.04em
+    font-family:'Mosk', sans-serif;
+    letter-spacing:.01em
 }
 .headline{
     font-size:var(--step-7);
     line-height:1.1
 }
 .h1{
-    font-size:var(--step-6);
-    line-height:1.2
+    font-size:50px;
+    line-height:1.1
 }
 .h2{
     font-size:var(--step-5);
@@ -598,6 +612,17 @@ h1,h2,h3{
     letter-spacing:.02em;
     line-height:1.8
 }
+
+.Titulo {
+    font-family:'Mosk', sans-serif;
+    font-size: 55px;
+}
+
+.Secciones {
+    font-family:'Mosk', sans-serif;
+    font-size: 48px;
+}
+
 .small,small{
     font-size:var(--step--1);
     line-height:1
@@ -856,15 +881,6 @@ a:not([class]){
     white-space:no-wrap;
     color:inherit
 }
-a:not([class]):after,a:not([class]):before{
-    content:"";
-    position:absolute;
-    background-color:var(--color-lilac-no-swop);
-    height:3px;
-    width:100%;
-    left:0;
-    bottom:0
-}
 a:not([class]):after{
     transform-origin:center right;
     transition:all cubic-bezier(.39,.575,.565,1) .8s
@@ -889,7 +905,8 @@ a.unstyled{
     display:inline;
     background-image:linear-gradient(transparent 50%,var(--underline) 50%,var(--underline) 85%,transparent 85%,transparent 100%);
     background-repeat:no-repeat;
-    background-size:0 100%
+    background-size:0 100%;
+    padding-bottom: 24px;
 }
 .underline:hover .underline__text{
     transition:.5s cubic-bezier(.645,.045,.355,1);
@@ -2402,12 +2419,12 @@ pre>code.highlight{
 }
  .Posts-intro__inner{
     display:flex;
-    align-items:center;
+    align-items:baseline;
     flex-direction:column
 }
 .Posts-intro__heading{
     color:#ffffff;
-    letter-spacing:.6px;
+    letter-spacing:none;
     align-self:flex-start
 }
 @media screen and (min-width:800px){
