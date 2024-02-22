@@ -2025,6 +2025,7 @@ pre>code.highlight{
     font-weight:700
 }
 .Site-head{
+    position: absolute;
     top:0;
     left:0;
     right:0;
