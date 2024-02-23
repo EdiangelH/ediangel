@@ -2391,11 +2391,12 @@ pre>code.highlight{
      background-color:var(--color-lilac);
      min-height:100vh 
 }
- .Posts-introo {
-     --color-selection-bg:var(--color-dark-selection);
-     --color-selection:var(--color-sea);
-     background-color:var(--color-sea);
-     min-height:100vh 
+
+.Posts-socials {
+    --color-selection-bg: var(--color-dark-selection);
+    --color-selection: var(--color-rose);
+    background-color: var(--color-marshmellow);
+    min-height: 100vh;
 }
 
 .work_tools {
